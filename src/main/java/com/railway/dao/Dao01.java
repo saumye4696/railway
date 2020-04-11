@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import org.springframework.stereotype.Repository;
 
 @Repository(value = "userDao")
-public class Dao01 {
-	public List<String> showPlaces(String name) {
+public class Dao01 implements Dao01Int {
+	public List<String> showPlaces(String name){
 		List<String> l1 = new ArrayList<String>();
 		
 		//creating a result list to return 
